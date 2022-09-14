@@ -1,0 +1,94 @@
+<test-run id="2" duration="4.177613000000001" testcasecount="4" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:58Z" end-time="2022-09-14T 09:24:03Z">
+  <test-suite type="Assembly" name="uk.co.edgewords.nfocusseptspecflow.dll" fullname="C:\Users\StevePowell\source\repos\uk.co.edgewords.nfocusseptspecflow\uk.co.edgewords.nfocusseptspecflow\bin\Debug\net6.0\uk.co.edgewords.nfocusseptspecflow.dll" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+    <test-suite type="TestSuite" name="uk" fullname="uk" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+      <test-suite type="TestSuite" name="co" fullname="uk.co" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+        <test-suite type="TestSuite" name="edgewords" fullname="uk.co.edgewords" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+          <test-suite type="TestSuite" name="nfocusseptspecflow" fullname="uk.co.edgewords.nfocusseptspecflow" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+            <test-suite type="TestSuite" name="Features" fullname="uk.co.edgewords.nfocusseptspecflow.Features" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+              <test-suite type="TestFixture" name="GoogleFeature" fullname="uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature" classname="uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature" total="4" passed="0" failed="1" inconclusive="0" skipped="3" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.177613">
+                <test-case name="CheckingMultipleResults" fullname="uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature.CheckingMultipleResults" methodname="CheckingMultipleResults" classname="GoogleFeature" result="Skipped" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:23:59Z" duration="0.001508" asserts="0" seed="1054264140">
+                  <properties>
+                    <property name="Category" value="Smoke" />
+                  </properties>
+                  <output><![CDATA[Ignored scenario
+]]></output>
+                </test-case>
+                <test-case name="SearchGoogleForEdgewords" fullname="uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature.SearchGoogleForEdgewords" methodname="SearchGoogleForEdgewords" classname="GoogleFeature" result="Failed" start-time="2022-09-14T 09:23:59Z" end-time="2022-09-14T 09:24:03Z" duration="4.174524" asserts="0" seed="635351120">
+                  <properties>
+                    <property name="Category" value="Smoke" />
+                    <property name="Category" value="Regression" />
+                  </properties>
+                  <output><![CDATA[Given I am on the Google Homepage
+-> done: GoogleStepDefinitions.GivenIAmOnTheGoogleHomepage() (0.9s)
+When I search for 'BBC'
+-> done: GoogleStepDefinitions.WhenISearchForEdgewords("BBC") (0.9s)
+Then 'Edgewords' is the top result
+-> error:   Not in the top result
+  Expected: String containing "Edgewords"
+  But was:  "Web result with site links
+
+BBC - Home
+https://www.bbc.co.uk
+The best of the BBC, with the latest news and sport headlines, weather, TV & radio highlights and much more from across the whole of BBC Online.
+News
+Visit BBC News for up-to-the-minute news, breaking news ...
+Sport headlines
+Football - Cricket - Tennis - Formula 1 - Wednesday's gossip
+iPlayer
+TV Guide - Sport - Drama & Soaps - Films - Featured on BBC News
+Football - BBC Sport
+Football news, scores, results, fixtures and videos from the ..."
+ (1.2s)
+
+]]></output>
+                  <failure>
+                    <message>  Not in the top result
+  Expected: String containing "Edgewords"
+  But was:  "Web result with site links
+
+BBC - Home
+https://www.bbc.co.uk
+The best of the BBC, with the latest news and sport headlines, weather, TV &amp; radio highlights and much more from across the whole of BBC Online.
+News
+Visit BBC News for up-to-the-minute news, breaking news ...
+Sport headlines
+Football - Cricket - Tennis - Formula 1 - Wednesday's gossip
+iPlayer
+TV Guide - Sport - Drama &amp; Soaps - Films - Featured on BBC News
+Football - BBC Sport
+Football news, scores, results, fixtures and videos from the ..."
+</message>
+                    <stack-trace>   at uk.co.edgewords.nfocusseptspecflow.StepDefinitions.GoogleStepDefinitions.ThenEdgewordsIsTheTopResult(String searchResult) in C:\Users\StevePowell\source\repos\uk.co.edgewords.nfocusseptspecflow\uk.co.edgewords.nfocusseptspecflow\StepDefinitions\GoogleStepDefinitions.cs:line 38
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature.ScenarioCleanup()
+   at uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature.SearchGoogleForEdgewords() in C:\Users\StevePowell\source\repos\uk.co.edgewords.nfocusseptspecflow\uk.co.edgewords.nfocusseptspecflow\Features\Google.feature:line 12
+</stack-trace>
+                  </failure>
+                </test-case>
+                <test-case name="SearchGoogleForMultipleThings(&quot;Edgewords&quot;,&quot;Automated Software Testing&quot;,null)" fullname="uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature.SearchGoogleForMultipleThings(&quot;Edgewords&quot;,&quot;Automated Software Testing&quot;,null)" methodname="SearchGoogleForMultipleThings(&quot;Edgewords&quot;,&quot;Automated Software Testing&quot;,null)" classname="GoogleFeature" result="Skipped" start-time="2022-09-14T 09:24:03Z" end-time="2022-09-14T 09:24:03Z" duration="0.000784" asserts="0" seed="302037134">
+                  <properties>
+                    <property name="Category" value="Smoke" />
+                  </properties>
+                  <output><![CDATA[OneTimeSetUp: Ignored scenario
+]]></output>
+                </test-case>
+                <test-case name="SearchGoogleForMultipleThings(&quot;BBC&quot;,&quot;The best of the BBC&quot;,null)" fullname="uk.co.edgewords.nfocusseptspecflow.Features.GoogleFeature.SearchGoogleForMultipleThings(&quot;BBC&quot;,&quot;The best of the BBC&quot;,null)" methodname="SearchGoogleForMultipleThings(&quot;BBC&quot;,&quot;The best of the BBC&quot;,null)" classname="GoogleFeature" result="Skipped" start-time="2022-09-14T 09:24:03Z" end-time="2022-09-14T 09:24:03Z" duration="0.000797" asserts="0" seed="235237559">
+                  <properties>
+                    <property name="Category" value="Smoke" />
+                  </properties>
+                  <output><![CDATA[OneTimeSetUp: Ignored scenario
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <errors />
+  </test-suite>
+</test-run>
