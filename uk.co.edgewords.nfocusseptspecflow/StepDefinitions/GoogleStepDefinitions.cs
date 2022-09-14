@@ -58,6 +58,8 @@ namespace uk.co.edgewords.nfocusseptspecflow.StepDefinitions
                 Assert.That(searchResults, Does.Contain(row["title"]), "Title is missing");
             }
             //A comment
+
+            //Testing CI
         }
 
     }
